@@ -13,10 +13,10 @@ class CustomerControllerTest extends TestCase
      *
      * @return void
      */
-    public function test_example()
+    public function test_customer()
     {
-        $response = $this->get('/');
+        $response = $this->get('/api/customers');
 
-        $response->assertStatus(200);
+        $response->assertOk();
     }
 }
